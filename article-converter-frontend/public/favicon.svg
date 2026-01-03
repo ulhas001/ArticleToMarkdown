@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="wandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#wandGrad)" opacity="0.1"/>
+  <!-- Magic wand -->
+  <path d="M 25 75 L 65 35" stroke="url(#wandGrad)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Star at tip -->
+  <path d="M 65 35 L 68 28 L 72 35 L 79 32 L 72 39 L 75 46 L 68 39 L 61 42 L 65 35 Z" fill="url(#wandGrad)"/>
+  <!-- Sparkles -->
+  <circle cx="40" cy="60" r="2.5" fill="#fbbf24"/>
+  <circle cx="55" cy="50" r="2" fill="#fbbf24"/>
+  <circle cx="48" cy="43" r="1.5" fill="#fbbf24"/>
+  <circle cx="35" cy="52" r="2" fill="#f472b6"/>
+  <circle cx="50" cy="65" r="1.5" fill="#f472b6"/>
+</svg>

@@ -1,0 +1,175 @@
+.container {
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  animation: slideUp 0.8s ease-out;
+}
+
+.platformBadges {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+.badgeGradient {
+  background: linear-gradient(to right, #1a1a1a, #4a4a4a);
+}
+
+.inputWrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  padding-right: 3rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  outline: none;
+  transition: all 0.3s;
+  color: #1f2937;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  ring: 2px;
+  ring-color: rgba(59, 130, 246, 0.5);
+  border-color: transparent;
+}
+
+.icon {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.detection {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  animation: fadeIn 0.6s ease-out;
+  color: #4b5563;
+}
+
+.checkIcon {
+  color: #10b981;
+}
+
+.button {
+  width: 100%;
+  margin-top: 2.5rem;
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.button:hover:not(:disabled) {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+.sparkles {
+  transition: transform 0.3s;
+}
+
+.button:hover .sparkles {
+  transform: rotate(12deg);
+}
+
+.error {
+  margin-top: 1.5rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 1rem;
+  border-radius: 12px;
+  color: #b91c1c;
+  font-size: 0.875rem;
+  animation: shake 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}

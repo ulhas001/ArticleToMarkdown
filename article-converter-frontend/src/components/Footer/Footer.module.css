@@ -1,0 +1,68 @@
+.footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.text {
+  font-weight: 400;
+}
+
+.heart {
+  color: #ef4444;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.name {
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name:hover {
+  transform: translateY(-2px);
+}
+
+.name::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  transition: width 0.3s ease;
+}
+
+.name:hover::after {
+  width: 100%;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(1.1);
+  }
+  20%, 40% {
+    transform: scale(1);
+  }
+}
