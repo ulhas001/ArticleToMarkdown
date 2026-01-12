@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'article-to-markdown.vercel.app';
+const API_BASE_URL = 'https://article-to-markdown.vercel.app';
 
 export const fetchArticle = async (url, platform) => {
   try {
