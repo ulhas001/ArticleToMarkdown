@@ -308,4 +308,4 @@ def convert_html_to_markdown(html_content):
     return markdown.strip()
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+    app.run()
